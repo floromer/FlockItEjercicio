@@ -3,6 +3,8 @@ package com.flockit.ejercicio.entities;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
+import com.flockit.ejercicio.utils.Crypto;
+
 @Entity
 public class Usuario {
 
@@ -22,11 +24,11 @@ public class Usuario {
     }
 
     public String getPassword() {
-        return this.password;
+        return Crypto.decrypt(this.password, this.username);
     }
 
     public void setPassword(String password) {
-        this.password = password;
+        this.password = Crypto.encrypt(password, this.username);
     }
     
 }

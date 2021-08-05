@@ -1,8 +1,9 @@
 package com.flockit.ejercicio.services;
 
-import org.springframework.stereotype.Service;
+import com.flockit.ejercicio.models.ProvinciaResponse;
 
-@Service
-public class ProvinciaService {
+public interface ProvinciaService {
+    
+    public ProvinciaResponse processRequest(String provincia);
     
 }

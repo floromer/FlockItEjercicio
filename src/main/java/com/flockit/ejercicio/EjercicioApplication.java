@@ -2,7 +2,6 @@ package com.flockit.ejercicio;
 
 import com.flockit.ejercicio.entities.Usuario;
 import com.flockit.ejercicio.repositories.UsuarioRepository;
-import com.flockit.ejercicio.utils.Crypto;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;

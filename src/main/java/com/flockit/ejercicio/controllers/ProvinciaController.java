@@ -2,7 +2,6 @@ package com.flockit.ejercicio.controllers;
 
 import com.flockit.ejercicio.models.ProvinciaResponse;
 import com.flockit.ejercicio.services.ProvinciaServiceImpl;
-import com.flockit.ejercicio.utils.ProvinciaResponseMapper;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

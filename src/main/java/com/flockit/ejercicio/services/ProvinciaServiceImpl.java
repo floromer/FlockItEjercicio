@@ -1,10 +1,5 @@
 package com.flockit.ejercicio.services;
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-import java.net.HttpURLConnection;
-import java.net.URL;
-
 import com.flockit.ejercicio.models.ProvinciaResponse;
 import com.flockit.ejercicio.utils.APIUtils;
 import com.flockit.ejercicio.utils.ProvinciaResponseMapper;

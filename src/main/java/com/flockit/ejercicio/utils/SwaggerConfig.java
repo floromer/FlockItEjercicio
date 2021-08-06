@@ -21,7 +21,7 @@ public class SwaggerConfig {
     public Docket api(TypeResolver typeResolver) {
         return new Docket(DocumentationType.SWAGGER_2)
                 .additionalModels(typeResolver.resolve(LoginResponse.class), typeResolver.resolve(ProvinciaResponse.class))
-                .select().apis(RequestHandlerSelectors.any()).paths(PathSelectors.any()).build()
+                .select().apis(RequestHandlerSelectors.basePackage("com")).paths(PathSelectors.any()).build()
                 .useDefaultResponseMessages(false);
     }
 

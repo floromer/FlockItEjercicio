@@ -5,15 +5,13 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
+import org.apache.log4j.Logger;
 import org.springframework.stereotype.Component;
 
 @Component
 public class APIUtils {
 
-    Logger logger = LoggerFactory.getLogger(APIUtils.class);
+    Logger logger = Logger.getLogger(APIUtils.class);
 
     public String getProvinciaJsonData(String provincia) {
         

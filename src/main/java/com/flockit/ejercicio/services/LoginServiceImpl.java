@@ -5,15 +5,14 @@ import com.flockit.ejercicio.exceptions.UserLoginException;
 import com.flockit.ejercicio.models.responses.LoginResponse;
 import com.flockit.ejercicio.repositories.LoginRepo;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
 public class LoginServiceImpl implements LoginService {
 
-    Logger logger = LoggerFactory.getLogger(LoginServiceImpl.class);
+    Logger logger = Logger.getLogger(LoginServiceImpl.class);
 
     @Autowired
     LoginRepo loginRepo;

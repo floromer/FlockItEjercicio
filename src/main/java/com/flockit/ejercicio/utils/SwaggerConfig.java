@@ -1,5 +1,9 @@
 package com.flockit.ejercicio.utils;
 
+import com.fasterxml.classmate.TypeResolver;
+import com.flockit.ejercicio.models.responses.LoginResponse;
+import com.flockit.ejercicio.models.responses.ProvinciaResponse;
+
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -12,14 +16,13 @@ import springfox.documentation.builders.RequestHandlerSelectors;
 @Configuration
 @EnableSwagger2
 public class SwaggerConfig {
-    
+
     @Bean
-    public Docket api() { 
-        return new Docket(DocumentationType.SWAGGER_2)  
-          .select()                                  
-          .apis(RequestHandlerSelectors.any())              
-          .paths(PathSelectors.any())                          
-          .build();                                           
+    public Docket api(TypeResolver typeResolver) {
+        return new Docket(DocumentationType.SWAGGER_2)
+                .additionalModels(typeResolver.resolve(LoginResponse.class), typeResolver.resolve(ProvinciaResponse.class))
+                .select().apis(RequestHandlerSelectors.any()).paths(PathSelectors.any()).build()
+                .useDefaultResponseMessages(false);
     }
-    
+
 }

@@ -1,8 +1,10 @@
 package com.flockit.ejercicio.services;
 
-import org.springframework.stereotype.Service;
+import com.flockit.ejercicio.exceptions.UserLoginException;
+import com.flockit.ejercicio.models.responses.LoginResponse;
 
-@Service
-public class LoginService {
+public interface LoginService {
+    
+    public LoginResponse processRequest(String username, String password) throws UserLoginException;
     
 }

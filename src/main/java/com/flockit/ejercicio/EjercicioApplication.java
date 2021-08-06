@@ -1,7 +1,7 @@
 package com.flockit.ejercicio;
 
-import com.flockit.ejercicio.entities.Usuario;
-import com.flockit.ejercicio.repositories.UsuarioRepository;
+import com.flockit.ejercicio.entities.User;
+import com.flockit.ejercicio.repositories.LoginRepo;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -16,12 +16,12 @@ public class EjercicioApplication {
 	}
 
 	@Bean
-	public CommandLineRunner populateDB(UsuarioRepository repo) {
+	public CommandLineRunner populateDB(LoginRepo repo) {
 		
 		return args -> {
-			Usuario usuario = new Usuario();
-			usuario.setUsername("username");
-			usuario.setPassword("password1234");	
+			User usuario = new User();
+			usuario.setUsername("FlockIt");
+			usuario.setPassword("EnriqueButty240");	
 			repo.save(usuario);
 		};
 	}

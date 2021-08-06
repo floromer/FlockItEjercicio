@@ -1,6 +1,6 @@
 package com.flockit.ejercicio.services;
 
-import com.flockit.ejercicio.models.ProvinciaResponse;
+import com.flockit.ejercicio.models.responses.ProvinciaResponse;
 import com.flockit.ejercicio.utils.APIUtils;
 import com.flockit.ejercicio.utils.ProvinciaResponseMapper;
 
@@ -19,6 +19,7 @@ public class ProvinciaServiceImpl implements ProvinciaService {
 
     @Override
     public ProvinciaResponse processRequest(String provincia) {
+        logger.info("Buscando " + provincia + " en la API");
         String json = apiUtils.getProvinciaJsonData(provincia);
         return ProvinciaResponseMapper.convert(json);
     }

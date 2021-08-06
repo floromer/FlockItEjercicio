@@ -3,7 +3,7 @@ package com.flockit.ejercicio.utils;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
-import com.flockit.ejercicio.models.ProvinciaResponse;
+import com.flockit.ejercicio.models.responses.ProvinciaResponse;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

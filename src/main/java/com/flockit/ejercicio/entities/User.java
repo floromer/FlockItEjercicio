@@ -2,11 +2,13 @@ package com.flockit.ejercicio.entities;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 import com.flockit.ejercicio.utils.Crypto;
 
 @Entity
-public class Usuario {
+@Table(name = "user")
+public class User {
 
     @Id
     private int id;

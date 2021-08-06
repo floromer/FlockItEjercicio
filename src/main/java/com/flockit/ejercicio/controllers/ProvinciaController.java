@@ -1,6 +1,6 @@
 package com.flockit.ejercicio.controllers;
 
-import com.flockit.ejercicio.models.ProvinciaResponse;
+import com.flockit.ejercicio.models.responses.ProvinciaResponse;
 import com.flockit.ejercicio.services.ProvinciaServiceImpl;
 
 import org.springframework.beans.factory.annotation.Autowired;

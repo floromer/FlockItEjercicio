@@ -3,7 +3,7 @@ package com.flockit.ejercicio.services;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.when;
 
-import com.flockit.ejercicio.models.ProvinciaResponse;
+import com.flockit.ejercicio.models.responses.ProvinciaResponse;
 import com.flockit.ejercicio.utils.APIUtils;
 
 import org.junit.jupiter.api.Test;

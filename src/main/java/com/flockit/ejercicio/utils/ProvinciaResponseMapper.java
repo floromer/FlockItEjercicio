@@ -2,7 +2,7 @@ package com.flockit.ejercicio.utils;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.flockit.ejercicio.models.ProvinciaResponse;
+import com.flockit.ejercicio.models.responses.ProvinciaResponse;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

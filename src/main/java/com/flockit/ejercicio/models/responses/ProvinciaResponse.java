@@ -1,4 +1,4 @@
-package com.flockit.ejercicio.models;
+package com.flockit.ejercicio.models.responses;
 
 public class ProvinciaResponse {
 
